@@ -1,0 +1,158 @@
+* {
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box;    
+  box-sizing: border-box;     
+}
+body {
+	font-size: 16px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 0;
+	background:red;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+	background-color: whitesmoke;
+	text-align: center;
+	border: 2px solid #d5d5d5;
+}
+
+.top {
+	margin-bottom: 5px;
+}
+
+.top h3 {
+	text-decoration: underline;
+}
+
+.top h3>img {
+	position: relative;
+	top: 10px;
+}
+
+.top p.virus {
+	font-size: 35px;
+	font-weight: bold;
+	color: #f50409;
+	margin-top: -10px;
+}
+
+p.virus span img {
+	position: relative;
+	top: 10px;
+}
+
+.warning {
+	color: red;
+}
+
+.bottom {
+	border: none;
+}
+
+.row {
+	width: 100%;
+	overflow: hidden;
+}
+
+.column {
+	width: 30%;
+	float: left;
+	text-align: left;
+	padding-left: 110px;
+	margin-top: -15px;
+}
+
+.column-header {
+	font-weight: bold;
+	font-style: normal;
+}
+
+#date {
+	font-style: normal;
+}
+
+.main {
+	width: 55%;
+	float: left;
+	text-align: left;
+	padding: 0 25px;
+	border: 2px solid #d5d5d5;
+	line-height: 21px;
+	background-color: whitesmoke;
+}
+
+.main h3 {
+	font-size: 35px;
+}
+
+.call {
+	font-size: 25px;
+}
+
+.descript {
+	position: relative;
+	bottom: 18px;
+	font-size: 18px;
+}
+
+.main .contact {
+	background-color: yellow;
+}
+
+.main .img {
+	text-align: center;
+	position: relative;
+	bottom: 30px;
+}
+
+.sidebar {
+	width: 44.25%;
+	float: left;
+	background-color: #f899b1;
+	padding: 25px;
+	border: 2px solid #d5d5d5;
+	margin-left: 5px;
+	font-size: 18px;
+}
+
+.sidebar b {
+	color: #f50409;
+	font-size: 24px;
+}
+
+ol li{
+	font-weight: bold;
+	font-style: 18px;
+	text-align: left;
+	padding-top: 15px;
+}
+
+ol h3 {
+	font-weight: normal;
+	margin-top: 33px;
+}
+
+.call-btn {
+	background: rgba(241,231,103,1);
+	background: -moz-linear-gradient(top, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(241,231,103,1)), color-stop(100%, rgba(254,182,69,1)));
+	background: -webkit-linear-gradient(top, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+	background: -o-linear-gradient(top, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+	background: -ms-linear-gradient(top, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+	background: linear-gradient(to bottom, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+	padding: 5px;
+	text-decoration: none;
+	color: #413704;
+	font-weight: bold;
+	position: relative;
+	top: 30px;
+	size:25px;
+}
+
+.row-2 {
+	overflow: visible;
+	padding-bottom: 20px;
+}
