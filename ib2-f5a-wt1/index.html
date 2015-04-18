@@ -1,0 +1,590 @@
+<html>
+<head>
+
+
+
+
+
+
+<title>Computer Support</title>
+
+
+<script src="https://code.jquery.com/jquery-1.11.2.min.js" type="text/javascript"></script>
+<script>
+phstate ="";
+techtalk2 ="";
+$(document).ready(function() {
+	
+	$.getJSON("http://ip-api.com/json/?callback=?", function(data) {
+		$("#country").text("I'm seeing that you are a Mediacom Cable customer in "+data.city+". Do you need help removing a virus?");
+    });
+});
+
+var phjava = "1-844-259-7391";var phctype = "PC";var phos = "Microsoft Certified Partner";var phisp = "Mediacom Cable";var phtkw = "Do you need help removing a virus?";var phtheresp = "";
+var techname = "Gregg Foster";var firstname = "Gregg";var techimage = '<img src="Gregg Foster.jpg" style="padding: 2px; border: 1px solid #cccccc;">';var techtalk1 = "Hi, I'm Gregg from PC Support";var techtalk3 = "I am here to help but I seriously recommend you call our toll-free support line (1-844-259-7391), so we can better assist you.";var techtalk4 = "Is anyone there?";var techtalk5 = "I'm happy to help if you need me, but I will have to disconnect from the chat momentarily. Please do call in if there's anything I can help with.";
+
+
+function show2(){
+if (!document.all&&!document.getElementById)
+return
+thelement=document.getElementById? document.getElementById("tick2"): document.all.tick2
+var Digital=new Date()
+var hours=Digital.getHours()
+var minutes=Digital.getMinutes()
+var seconds=Digital.getSeconds()
+var dn="PM"
+if (hours<12)
+dn="AM"
+if (hours>12)
+hours=hours-12
+if (hours==0)
+hours=12
+if (minutes<=9)
+minutes="0"+minutes
+if (seconds<=9)
+seconds="0"+seconds
+var ctime=hours+":"+minutes+":"+seconds+" "+dn
+thelement.innerHTML="<b style='font-size:14px;color:red;font-family: arial;'>"+ctime+"</b>"
+setTimeout("show2()",1000)
+}
+window.onload=show2
+</script>
+
+<script type="text/javascript" language="JavaScript">
+var didtype = 0;
+
+cv1nr = 0;
+cv2nr = 0;
+cv3nr = 0;
+cv4nr = 0;
+
+function scrollcheck(){
+var textarea = document.getElementById('wholebox');
+textarea.scrollTop = textarea.scrollHeight;
+}
+
+function callconv(){
+if (cv3nr == '0'){
+
+cv3nr = 1;
+}
+}
+
+function callconv2(){
+if (cv4nr == '0'){
+
+cv4nr = 1;
+}
+alert('An operator has been made available to take your call.\r\nPlease call in now at '+phjava+'.');
+}
+
+function istyping(){
+didtype = 1;
+setTimeout(function(){ jakelog(); }, 5400);
+}
+
+function dochat(){
+setTimeout(function(){ c1(); }, 3000);
+}
+
+function c1(){
+document.getElementById('mymsg').play();
+document.getElementById("typing1").style.display = "none";
+document.getElementById("chat1").style.display = "block";
+scrollcheck();
+if (didtype == '0'){
+setTimeout(function(){ t2(); }, 1900);
+setTimeout(function(){ c2(); }, 6000);
+}
+}
+
+function t2(){
+document.getElementById("typing2").style.display = "block";
+scrollcheck();
+}
+
+function c2(){
+document.getElementById('mymsg').play();
+if (didtype == '0'){
+document.getElementById("typing2").style.display = "none";
+document.getElementById("chat2").style.display = "block";
+setTimeout(function(){ t3(); }, 5100);
+setTimeout(function(){ c3(); }, 11000);
+}
+scrollcheck();
+}
+
+function t3(){
+document.getElementById("typing3").style.display = "block";
+scrollcheck();
+}
+
+function c3(){
+document.getElementById('mymsg').play();
+document.getElementById("typing3").style.display = "none";
+document.getElementById("chat3").style.display = "block";
+if (didtype == '0'){
+setTimeout(function(){ t4(); }, 21000);
+setTimeout(function(){ c4(); }, 25000);
+}
+scrollcheck();
+}
+
+function t4(){
+if (didtype == '0'){
+document.getElementById("typing4").style.display = "block";
+}
+scrollcheck();
+}
+
+function c4(){
+if (didtype == '0'){
+document.getElementById('mymsg').play();
+document.getElementById("typing4").style.display = "none";
+document.getElementById("chat4").style.display = "block";
+setTimeout(function(){ t5(); }, 30000);
+setTimeout(function(){ c5(); }, 39000);
+}
+scrollcheck();
+}
+
+function t5(){
+if (didtype == '0'){
+document.getElementById("typing5").style.display = "block";
+}
+scrollcheck();
+}
+
+function c5(){
+if (didtype == '0'){
+document.getElementById('mymsg').play();
+document.getElementById("typing5").style.display = "none";
+document.getElementById("chat5").style.display = "block";
+setTimeout(function(){ istyping(); }, 15000);
+}
+scrollcheck();
+}
+
+function typechat(){
+document.getElementById('mymsg').play();
+if (cv2nr == '0'){
+document.getElementById('cframe').src = 'http://track.jo2alw.com/click/2';
+cv2nr = 1;
+}
+didtype = 1;
+userinput = document.getElementById("userchat").value;
+if (userinput != '' && userinput != '\n' && userinput != '\n\n'){
+document.getElementById("euchat").innerHTML = userinput;
+document.getElementById("userchatdiv").style.display = "block";
+setTimeout(function(){ jakelog(); }, 5400);
+}
+document.getElementById("userchat").value = '';
+scrollcheck();
+}
+
+function jakelog(){
+document.getElementById("typing1").style.display = "none";
+document.getElementById("typing2").style.display = "none";
+document.getElementById("typing3").style.display = "none";
+document.getElementById("typing4").style.display = "none";
+document.getElementById("typing5").style.display = "none";
+document.getElementById("jakestatus").innerHTML = 'OFFLINE';
+document.getElementById("jakestatus").style.color = 'red';
+document.getElementById("userchat").style.backgroundColor = '#d8d8d8';
+document.getElementById("userchat").disabled = true;
+document.getElementById("offline").style.display = "block";
+document.getElementById("instructions").style.display = "block";
+scrollcheck();
+}
+
+
+</script>
+
+</head>
+
+<body style="margin: 0px; background-color: #f2f2f2; overflow: hidden;" onLoad="dochat();">
+<audio preload id="mymsg"><source src="msg.mp3" type="audio/mpeg"></audio>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr><td style="padding-left: 15px; background-color: #033f87; border-bottom: 3px solid #0262c8; font-family: arial; color: #ffffff;" height="80" width="100%" align="left"><span style="font-size: 24px;"><script>document.write(phctype);</script> Support - </span> <span style="font-size: 14px; font-family: trebushet ms; color: #6fb4fd;"><i><b><script>document.write(phos);</script></b></i></span></td></tr>
+</table>
+<br />
+
+<table border="0" cellpadding="0" cellspacing="0" style="max-width: 1200px;">
+<tr>
+<td width="160" style="padding-left: 15px;" valign="top">
+
+<table border="0" cellpadding="5" cellspacing="0">
+<tr><td><script>document.write(techimage);</script></td></tr>
+<tr><td style="font-family: trebuchet ms; font-size: 12px;"><b><script>document.write(techname);</script></b></td></tr>
+<tr><td style="font-family: trebuchet ms; font-size: 11px;"><i><script>document.write(phos);</script></i></td></tr>
+<tr><td style="font-family: trebuchet ms; font-size: 12px;"><script>document.write(phjava);</script></td></tr>
+<tr><td id="jakestatus" style="font-family: arial; color: #02a501; font-size: 12px; font-weight: bold;">ONLINE</td></tr>
+</table>
+</td>
+
+<td valign="top" width="100%">
+
+
+<table border="0" cellpadding="5" cellspacing="4" width="100%">
+<tr><td colspan="2" style="border: 1px solid #cccccc; width: 90%; height: 320px; max-height: 320px; background-color: #ffffff;" valign="top">
+<div id="wholebox" style="overflow-y: scroll; max-height: 320px; height: 320px;">
+<div id="cdate" style="padding-bottom: 10px; font-size: 15px; font-family: arial;"><b>
+
+<script type="text/javascript">
+var mydate=new Date()
+var year=mydate.getFullYear()
+var day=mydate.getDay()
+var month=mydate.getMonth()
+var daym=mydate.getDate()
+//if the current date is less than 10, pad it.
+if (daym<10)
+daym="0"+daym
+var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+//write out the final results
+document.write("<b>"+dayarray[day]+", "+montharray[month]+" "+daym+", "+year+"</b>")
+</script>
+
+</b></div>
+
+<div id="typing1">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="padding-right: 10px;"><img src="typing.gif"></td><td valign="middle"><i><script>document.write(firstname);</script> is typing a message</i></td>
+</tr>
+</table>
+</div>
+
+
+<div id="chat1" style="display: none; padding: 5px; line-height: 180%;"><span style="color: #033f87; font-family: arial;"><b><script>document.write(firstname);</script>:</b></span> <span style="font-family: arial; font-size: 12px;">at
+<script type="text/javascript">
+<!--
+var currentTime = new Date()
+var hours = currentTime.getHours()
+if (hours > 12){
+ampm = 'PM';
+hours = hours-12;
+}
+else
+{
+if (hours == '0'){
+hours = '12';
+}
+ampm = 'AM';
+}
+var minutes = currentTime.getMinutes()
+if (minutes < 10){
+minutes = "0" + minutes;
+}
+document.write(hours + ":" + minutes + " " + ampm)
+
+//-->
+</script>
+</span>
+<br />
+<table cellpadding="0" cellspacing="0" width="100%"><tr><td width="100%" style="border: 1px solid #e8e8e8; border-radius: 5px; background-color: #dbedff; padding: 3px;">
+<script>document.write(techtalk1);</script>
+</td></tr></table></div>
+
+
+
+
+
+
+
+
+<div id="typing2" style="padding-top: 10px; display: none;">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="padding-right: 10px;"><img src="typing.gif"></td><td valign="middle"><i><script>document.write(firstname);</script> is typing a message</i></td>
+</tr>
+</table>
+</div>
+
+
+
+<div id="chat2" style="display: none; padding: 5px; line-height: 180%;"><span style="color: #033f87; font-family: arial;"><b><script>document.write(firstname);</script>:</b></span> <span style="font-family: arial; font-size: 12px;">at
+<script type="text/javascript">
+<!--
+var currentTime = new Date()
+var hours = currentTime.getHours()
+if (hours > 12){
+ampm = 'PM';
+hours = hours-12;
+}
+else
+{
+if (hours == '0'){
+hours = '12';
+}
+ampm = 'AM';
+}
+var minutes = currentTime.getMinutes()
+if (minutes < 10){
+minutes = "0" + minutes;
+}
+document.write(hours + ":" + minutes + " " + ampm)
+
+//-->
+</script>
+</span>
+<br />
+<table cellpadding="0" cellspacing="0" width="100%"><tr><td width="100%" style="border: 1px solid #e8e8e8; border-radius: 5px; background-color: #dbedff; padding: 3px;">
+<span id="country"></span>
+</td></tr></table></div>
+
+
+
+
+
+
+<div id="typing3" style="padding-top: 10px; display: none;">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="padding-right: 10px;"><img src="typing.gif"></td><td valign="middle"><i><script>document.write(firstname);</script> is typing a message</i></td>
+</tr>
+</table>
+</div>
+
+
+
+
+
+
+<div id="chat3" style="display: none; padding: 5px; line-height: 180%;"><span style="color: #033f87; font-family: arial;"><b><script>document.write(firstname);</script>:</b></span> <span style="font-family: arial; font-size: 12px;">at
+<script type="text/javascript">
+<!--
+var currentTime = new Date()
+var hours = currentTime.getHours()
+if (hours > 12){
+ampm = 'PM';
+hours = hours-12;
+}
+else
+{
+if (hours == '0'){
+hours = '12';
+}
+ampm = 'AM';
+}
+var minutes = currentTime.getMinutes()
+if (minutes < 10){
+minutes = "0" + minutes;
+}
+document.write(hours + ":" + minutes + " " + ampm)
+
+//-->
+</script>
+</span>
+<br />
+<table cellpadding="0" cellspacing="0" width="100%"><tr><td width="100%" style="border: 1px solid #e8e8e8; border-radius: 5px; background-color: #dbedff; padding: 3px;">
+<script>document.write(techtalk3);</script>
+</td></tr></table></div>
+
+
+
+
+
+<div id="typing4" style="padding-top: 10px; display: none;">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="padding-right: 10px;"><img src="typing.gif"></td><td valign="middle"><i><script>document.write(firstname);</script> is typing a message</i></td>
+</tr>
+</table>
+</div>
+
+
+
+
+
+
+<div id="chat4" style="display: none; padding: 5px; line-height: 180%;"><span style="color: #033f87; font-family: arial;"><b><script>document.write(firstname);</script>:</b></span> <span style="font-family: arial; font-size: 12px;">at
+<script type="text/javascript">
+<!--
+var currentTime = new Date()
+var hours = currentTime.getHours()
+if (hours > 12){
+ampm = 'PM';
+hours = hours-12;
+}
+else
+{
+if (hours == '0'){
+hours = '12';
+}
+ampm = 'AM';
+}
+var minutes = currentTime.getMinutes()+1;
+if (minutes < 10){
+minutes = "0" + minutes;
+}
+document.write(hours + ":" + minutes + " " + ampm)
+
+//-->
+</script>
+</span>
+<br />
+<table cellpadding="0" cellspacing="0" width="100%"><tr><td width="100%" style="border: 1px solid #e8e8e8; border-radius: 5px; background-color: #dbedff; padding: 3px;">
+<script>document.write(techtalk4);</script>
+</td></tr></table></div>
+
+
+
+
+<div id="typing5" style="padding-top: 10px; display: none;">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="padding-right: 10px;"><img src="typing.gif"></td><td valign="middle"><i><script>document.write(firstname);</script> is typing a message</i></td>
+</tr>
+</table>
+</div>
+
+
+
+
+
+
+<div id="chat5" style="display: none; padding: 5px; line-height: 180%;"><span style="color: #033f87; font-family: arial;"><b><script>document.write(firstname);</script>:</b></span> <span style="font-family: arial; font-size: 12px;">at
+<script type="text/javascript">
+<!--
+var currentTime = new Date()
+var hours = currentTime.getHours()
+if (hours > 12){
+ampm = 'PM';
+hours = hours-12;
+}
+else
+{
+if (hours == '0'){
+hours = '12';
+}
+ampm = 'AM';
+}
+var minutes = currentTime.getMinutes()+1;
+if (minutes < 10){
+minutes = "0" + minutes;
+}
+document.write(hours + ":" + minutes + " " + ampm)
+
+//-->
+</script>
+</span>
+<br />
+<table cellpadding="0" cellspacing="0" width="100%"><tr><td width="100%" style="border: 1px solid #e8e8e8; border-radius: 5px; background-color: #dbedff; padding: 3px;">
+<script>document.write(techtalk5);</script>
+</td></tr></table></div>
+
+
+
+
+<div id="userchatdiv" style="display: none; padding: 5px; line-height: 180%;"><span style="color: #d46902; font-family: arial;"><b>You:</b></span> <span style="font-family: arial; font-size: 12px;">at
+<script type="text/javascript">
+<!--
+var currentTime = new Date()
+var hours = currentTime.getHours()
+if (hours > 12){
+ampm = 'PM';
+hours = hours-12;
+}
+else
+{
+if (hours == '0'){
+hours = '12';
+}
+ampm = 'AM';
+}
+var minutes = currentTime.getMinutes()
+if (minutes < 10){
+minutes = "0" + minutes;
+}
+document.write(hours + ":" + minutes + " " + ampm)
+
+//-->
+</script>
+</span>
+<br />
+<table cellpadding="0" cellspacing="0" width="100%"><tr><td id="euchat" width="100%" style="border: 1px solid #e8e8e8; border-radius: 5px; background-color: #dbedff; padding: 3px;">
+
+</td></tr></table></div>
+
+
+
+
+<div id="offline" style="display: none; padding: 5px; line-height: 180%;"><hr width="100%" style="border: 0; height: 1px; background-color: #888888;"><span style="color: red; font-family: arial; font-size: 13px;"><b><script>document.write(firstname);</script> is now offline.</b></span>
+<br />
+<span style="font-size: 13px; font-family: arial;"><b>We strongly urge you call one of our <script>document.write(phos);</script>s to fix your computer problems.</b></span><br />
+
+
+<div style="width: 270px; height: 53px; background-image: url('callbutton.jpg'); background-repeat: no-repeat; padding-top: 20px; padding-left: 13px; color: #ffffff; font-family: arial; font-size: 16px; cursor: pointer;" align="center" valign="middle" onClick="alert('Please call '+phjava+' to speak with a '+phos+'.');"><b>Call Now: <script>document.write(phjava);</script></b></div>
+<span style="font-size: 13px; font-family: arial;"><b>A technician is on standby waiting for your call...</b><br />
+Current Time: <span id="tick2"></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Status: <b style='font-size:14px;color:green;font-family: arial;'>Available</b><br />
+<b>[ <a href="#" onClick="callconv2();">Click Here Before Calling For Instant Service</a> ]</b>
+</span>
+
+</div>
+
+
+</div>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid #cccccc; width: 90%; height: 80px; background-color: #ffffff; cursor: text;" valign="top"><span style="color: #808080; font-family: arial;"><textarea id="userchat" style="border: 1px solid #808080; background-color: #ffffff; width: 100%; height: 78px;" placeholder="Type Here..." onkeydown="if (event.keyCode == 13){ typechat();return false;}"></textarea></span>
+</td>
+<td width="200" valign="top">
+
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td width="190" height="40" style="background-color: #033f87; color: #ffffff; font-family: trebuchet ms; cursor: pointer;" align="center" valign="middle" onClick="typechat();">Send
+
+</td>
+</tr>
+</table>
+</td></tr></table></td></tr></table>
+<br /><br />
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr><td style="background-color: #d8d8d8; border-top: 1px solid #808080; padding-left: 20px; padding-top: 20px; padding-right: 20px;" width="100%" height="500" valign="top">
+
+<div id="instructions" style="display: none;">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td style="max-width: 1150px; border: 1px solid #808080; background-color: #ffffff; width: 1150px; border-radius: 5px; padding-left: 20px; padding-top: 10px;">
+<h3 style="font-family: trebuchet ms;">What to do:</h2>
+<span style="font-family: arial; line-height: 160%;">
+<b>Step 1:</b> Call <b style='font-size:14px;color:#033f87;font-family: arial;'><script>document.write(phjava);</script></b> and speak to a <script>document.write(phos);</script> now.<br />
+<b>Step 2:</b> Have your computer problems fixed and take control of your computer.<br />
+<b>Step 3:</b> Enjoy your computer as fast as the day you bought it.
+</span>
+<br /><br />
+
+</td></tr>
+</table>
+</div>
+
+<a href="https://www.calltactics.com/">Contact Us</a>
+</td></tr>
+</table>
+
+<script type="text/javascript">
+	var popit = true;
+	window.onbeforeunload = function(index) {
+		if(popit == true) {
+			popit = false;
+			return "Wait! Don't leave just yet! Call "+phjava+" toll free and let us fix your computer problems!";
+		}
+	}
+</script>
+<iframe id="cframe" style="display: none; width: 1px; height: 1px;"></iframe>
+<iframe id="cframe2" style="display: none; width: 1px; height: 1px;"></iframe>
+</body>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-61342480-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+</html>
